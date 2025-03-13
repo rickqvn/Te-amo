@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    /* Adiciona a imagem como plano de fundo */
+    background-image: url('casal.jpg');
+    background-size: cover; /* Cobrir toda a área do body */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Cor do texto para contraste */
+}
+
+h1 {
+    font-size: 150px;
+    margin-top: 20px;
+    text-shadow: 4px 2px 4px rgba(170, 14, 110, 0.5); /* Sombra no texto para melhor legibilidade */
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.botao-verde, .botao-vermelho {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botao-verde {
+    background-color: green;
+    color: white;
+}
+
+.botao-vermelho {
+    background-color: red;
+    color: white;
+}
+
+/* Estilos para smartphones */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 54px;
+  
+    }
+
+    .container-botoes {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .botao-verde, .botao-vermelho {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
